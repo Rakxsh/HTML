@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        form {
+            border: blue;
+            size: 1px;
+            border-style: solid;
+            padding-left: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin: 5px;
+        }
+
+        input {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="register">
+        <label>Name</label>
+        <input type='text' placeholder=" Enter your name" required /> <br />
+        <label>Password</label>
+        <input type='password' placeholder="Enter your password" required /> <br />
+        <input type="search" placeholder="Product Name" /> <br />
+        <input type="email" placeholder="Enter your email address" />
+        <label>Select your Gender</label><br />
+        <input type='radio' name="gender" value="male" /> <label>Male</label>
+        <input type='radio' name="gender" value="female" /> <label>female</label>
+        <input type='checkbox' checked /> <br />
+        <label>Upload your image</label><input type="file" /> <br />
+        <input type="number" /> <br />
+        <lable>Number input field</lable> <br />
+        <input type="date" /> <label>D.O.B</label> <br />
+        <label>Select checkbox for agreeing terms and conditions</label> <br />
+        <input type="button" value="Add" />
+        <input type="submit" value="Submit" />
+
+    </form>
+    <form id="login">
+        <label>Name *</label>
+        <input type='text' placeholder=" Enter your name" required /> <br />
+        <label>Password *</label>
+        <input type='password' placeholder="Enter your password" required /> <br />
+        <input type="button" value="Submit" />
+    </form>
+
+    <select size=1>
+        <option value="india" disabled>India</option>
+        <option value="australia">Australia</option>
+        <option value="us" selected>US</option>
+    </select>
+</body>
+
+</html>

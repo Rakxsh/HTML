@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Css Basics</title>
+        <link rel="stylesheet" href="../css/cssbasics.css">
+        <style>
+
+
+
+body {
+  background-color: whitesmoke;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#navbar {
+  background-color: darkcyan;
+  margin-bottom: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.listItem {
+  color: snow;
+}
+a {
+  text-decoration: none;
+}
+ul#navbar {
+  display: flex;
+  list-style-type: none;
+  flex-direction: row; /* column */
+  justify-content: space-around; /* start, center, flex-end, space-around,  */
+  height: 70px;
+  align-items: center;
+}
+li {
+  margin: 5px;
+  padding: 5px;
+}
+.content {
+  display: grid;
+  grid-template-columns: 30% 70% 20%;
+  grid-template-columns: 1fr 3fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+sidebar {
+  background-color: turquoise;
+  padding: 10px;
+}
+
+content {
+  background-color: lightblue;
+  padding: 10px;
+}
+
+sidebar ul {
+  list-style-type: none;
+  border: 1px solid darkcyan;
+}
+
+sidebar ul li {
+  border: 1px solid darkcyan;
+  padding: 10px;
+}
+
+.first-side-bar li:hover {
+  background-color: lightslategray;
+}
+input :required {
+  background-color: maroon;
+}
+
+input :checked {
+  background-color: blue;
+}
+
+label#userid::after {
+  content: "*";
+}
+
+
+
+
+            .second li:first-child{
+                background-color: blue;
+            }
+            .second li:last-child {
+                background-color: red;
+            }
+            .second li:nth-child(3) {
+                background-color: yellow;
+            }
+            .second li:nth-child(even) {
+                background-color: tomato;
+            }
+            .second li:not(.red) {
+                background-color: violet;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <ul id="navbar"  >
+                    <li ><a href="#" class="listItem">Home</a></li>
+                    <li><a href="#" class="listItem">About</a></li>
+                    <li><a href="#" class="listItem">ContactUs</a></li>
+                    <form>
+                        <input type="text" required>
+                        <input type="button" value="Search"/>
+                    </form>
+                    <li><a href="#" class="listItem">Login</a></li>
+                    <li><a href="#" class="listItem">Register</a></li>
+                </ul>
+            </nav>
+            <div class="content">
+                <sidebar  class="first-side-bar">
+                    <h1>SideBar</h1>
+                    <ul>
+                        <li>Item1</li>
+                        <li>Item2</li>
+                        <li>Item3</li>
+                        <li>Item4</li>
+                        <li>Item5</li>
+                    </ul>
+                </sidebar>
+                <content>
+                    <h1>Content Area</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p style="margin-bottom: 5px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam culpa distinctio deserunt, repellendus aliquam sint omnis error sit, eligendi ad quasi quibusdam dolorem, quaerat alias aspernatur! Vero molestiae ab minus laudantium aliquid, tempore impedit asperiores recusandae quas error beatae nesciunt praesentium porro expedita, rerum in. Molestias maiores voluptas perferendis natus impedit. Excepturi recusandae quos ex odio voluptas amet eaque, magnam, vitae fugiat molestias enim dolore. Magnam, excepturi quia! Explicabo, ipsam quam. Rerum consequuntur dolore beatae ullam. Ea temporibus voluptas praesentium quaerat harum voluptates id debitis repudiandae nostrum veniam sit ipsam dolor laudantium, quis doloribus neque veritatis aspernatur impedit possimus obcaecati.</p>
+                    <hr/>
+
+                    <form style="margin-top: 5px;">
+                        <label id="userid">Enter user id</label>
+                        <input type="text"  placeholder="Enter user id"/> <br/>
+                    <input type="checkbox" /> <label>Agree terms and conditions</label>
+                </form>
+                </content>
+                <sidebar >
+                    <h1>SideBar</h1>
+                    <ul class="second">
+                        <li class="red">item1</li>
+                        <li>item2</li>
+                        <li>item3</li>
+                        <li>item4</li>
+                        <li>item5</li>
+                    </ul>
+                </sidebar>
+                <content>
+                    <h1>Content Area</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam culpa distinctio deserunt, repellendus aliquam sint omnis error sit, eligendi ad quasi quibusdam dolorem, quaerat alias aspernatur! Vero molestiae ab minus laudantium aliquid, tempore impedit asperiores recusandae quas error beatae nesciunt praesentium porro expedita, rerum in. Molestias maiores voluptas perferendis natus impedit. Excepturi recusandae quos ex odio voluptas amet eaque, magnam, vitae fugiat molestias enim dolore. Magnam, excepturi quia! Explicabo, ipsam quam. Rerum consequuntur dolore beatae ullam. Ea temporibus voluptas praesentium quaerat harum voluptates id debitis repudiandae nostrum veniam sit ipsam dolor laudantium, quis doloribus neque veritatis aspernatur impedit possimus obcaecati.</p>
+                </content>
+
+            </div>
+            
+        </div>
+    </body>
+</html>

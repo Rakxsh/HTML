@@ -1,0 +1,27 @@
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    width: 35%;
+  }
+  .form-row-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    padding: 5px 3px;
+  }
+  .form-row-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    padding: 2px 3px;
+  }
+  label{
+    text-align: left;
+    width: 60%;
+  }
+  label, input, span{
+    padding: 4px;
+  }
